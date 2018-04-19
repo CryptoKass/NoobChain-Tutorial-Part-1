@@ -15,7 +15,7 @@ public class StringUtil {
 			byte[] hash = digest.digest(input.getBytes("UTF-8"));
 
 			// This will contain hash as hexidecimal
-			StringBuffer hexString = new StringBuffer();
+			StringBuilder hexString = new StringBuilder();
 
 			for (byte aHash : hash) {
 				String hex = Integer.toHexString(0xff & aHash);
